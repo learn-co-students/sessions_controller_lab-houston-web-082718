@@ -1,5 +1,8 @@
-<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
-  <input name=name>
-  <input type=submit value='login'>
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<%= form_tag login_path do %>
+    <%=text_field_tag :name %>
+    <%= button_tag 'login'  %>
 <% end %>
 
